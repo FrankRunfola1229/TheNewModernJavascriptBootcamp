@@ -22,29 +22,29 @@
 // firstReq.send();
 // console.log('Request Sent!');
 
-fetch('https://swapi.co/api/planets/')
-  .then(response => {
-    if (!response.ok) throw new Error(`Status Code Error: ${response.status}`)
+fetch("https://swapi.co/api/planets/")
+    .then(response => {
+        if (!response.ok) throw new Error(`Status Code Error: ${response.status}`);
 
-    response.json().then(data => {
-      for (let planet of data.results) {
-        const h1 = document.querySelector('table')
-        h1.innerHTML += `<tr><td>${planet.name}</td></tr>`
-      }
+        response.json().then(data => {
+            for (let planet of data.results) {
+                const h1 = document.querySelector("table");
+                h1.innerHTML += `<tr><td>${planet.name}</td></tr>`;
+            }
+        });
     })
-  })
-  .then(
-    setTimeout(() => {
-      const h1 = document.createElement('h1')
-      h1.innerText = 'world'
-      const elem = document.body.appendChild(h1)
-    }, 3000)
-  )
-  .catch(err => {
-    console.log('SOMETHING WENT WRONG WITH FETCH!')
-    console.log(err)
-  })
+    .then(
+        setTimeout(() => {
+            const h1 = document.createElement("h1");
+            h1.innerText = "world";
+            const elem = document.body.appendChild(h1);
+        }, 3000)
+    )
+    .catch(err => {
+        console.log("SOMETHING WENT WRONG WITH FETCH!");
+        console.log(err);
+    });
 
-const h1 = document.createElement('h1')
-h1.innerText = 'hello'
-const elem = document.body.appendChild(h1)
+const h1 = document.createElement("h1");
+h1.innerText = "hello";
+const elem = document.body.appendChild(h1);

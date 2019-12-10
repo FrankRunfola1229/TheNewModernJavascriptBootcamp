@@ -1,4 +1,7 @@
 {
     "search.useGlobalIgnoreFiles": true,
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "workbench.tree.indent": 10,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100
 }
