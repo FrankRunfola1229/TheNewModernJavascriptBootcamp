@@ -9,7 +9,7 @@ const colors = [
 	'violet'
 ];
 const h1 = document.querySelector('h1');
-const changeColor = function(evt) {
+const changeColor = function (evt) {
 	console.log(evt); //CONTAINS INFORMATION ON THE CLICK EVENT!
 	h1.style.color = this.style.backgroundColor;
 };
@@ -23,6 +23,6 @@ for (let color of colors) {
 	box.addEventListener('click', changeColor);
 }
 
-document.body.addEventListener('keypress', function(e) {
+document.body.addEventListener('keypress', function (e) {
 	console.log(e); //CONTAINS INFORMATION ON THE KEYPRESS EVENT
 });

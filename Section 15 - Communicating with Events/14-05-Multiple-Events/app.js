@@ -8,7 +8,7 @@ const colors = [
 	'indigo',
 	'violet'
 ];
-const changeColor = function() {
+const changeColor = function () {
 	const h1 = document.querySelector('h1');
 	h1.style.color = this.style.backgroundColor;
 };
