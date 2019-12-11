@@ -17,8 +17,6 @@ numbers.forEach(function (num, idx) {
   console.log(idx, num);
 });
 
-
-
 const books = [{
     title: 'Good Omens',
     authors: ['Terry Pratchett', 'Neil Gaiman'],
